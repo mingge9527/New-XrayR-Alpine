@@ -364,7 +364,7 @@ case "$option" in
         fi
 
         # 写入配置文件
-        echo "${yellow}正在尝试写入配置文件...${plain}"
+        echo -e "${yellow}正在尝试写入配置文件...${plain}"
         sed -i "s/PanelType:.*/PanelType: \"V2board\"/g" /etc/XrayR/config.yml
         sed -i "s,ApiHost:.*,ApiHost: \"${apihost}\",g" /etc/XrayR/config.yml
         sed -i "s/ApiKey:.*/ApiKey: ${apikey}/g" /etc/XrayR/config.yml
@@ -372,11 +372,11 @@ case "$option" in
         sed -i "s/NodeType:.*/NodeType: ${node_type}/g" /etc/XrayR/config.yml
         sed -i "s/CertDomain:.*/CertDomain: \"${node_domain}\"/g" /etc/XrayR/config.yml
         echo ""
-        echo "${yellow}写入完成，正在尝试重启XrayR服务...${plain}"
+        echo -e "${yellow}写入完成，正在尝试重启XrayR服务...${plain}"
         echo
         rc-service XrayR restart
         
-        echo "${green}XrayR服务已经完成重启，请愉快地享用！${plain}"
+        echo -e "${green}XrayR服务已经完成重启，请愉快地享用！${plain}"
         echo
         exit 0
         ;;
