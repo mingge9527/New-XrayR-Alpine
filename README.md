@@ -4,6 +4,8 @@
 
 安装目录位于 /etc/XrayR
 
+![image](https://raw.githubusercontent.com/mingge9527/New-XrayR-Alpine/main/demo.png)
+
 # 安装脚本
 
 ```shell script
