@@ -255,8 +255,6 @@ case "$option" in
         rc-service XrayR status
         echo ""
         tail -n 10 -q /var/log/XrayR.log
-        echo ""
-        
         echo && echo -n -e "${yellow}按回车返回主菜单: ${plain}" && read temp
         xrayr
         ;;
