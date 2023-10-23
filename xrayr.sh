@@ -311,7 +311,7 @@ case "$option" in
         read -p "请输入你的机场地址:" apihost
         [ -z "${apihost}" ]
         echo "—————————————————"
-        echo "您设定的机场网址为 ${green}${apihost}${plain}"
+        echo -e "您设定的机场网址为 ${green}${apihost}${plain}"
         echo "—————————————————"
         echo ""
         
@@ -322,7 +322,7 @@ case "$option" in
         read -p "请输入API Key:" apikey
         [ -z "${apikey}" ]
         echo "—————————————————"
-        echo "您设定的API Key为 ${green}${apikey}${plain}"
+        echo -e "您设定的API Key为 ${green}${apikey}${plain}"
         echo "—————————————————"
         echo ""
     
@@ -332,7 +332,7 @@ case "$option" in
         read -p "请输入V2Board中的节点序号:" node_id
         [ -z "${node_id}" ]
         echo "—————————————————"
-        echo "您设定的节点序号为 ${green}${node_id}${plain}"
+        echo -e "您设定的节点序号为 ${green}${node_id}${plain}"
         echo "—————————————————"
         echo ""
 
@@ -348,7 +348,7 @@ case "$option" in
         fi
 
         echo "—————————————————"
-        echo "您选择的协议为 ${green}${node_type}${plain}"
+        echo -e "您选择的协议为 ${green}${node_type}${plain}"
         echo "—————————————————"
         echo ""
 
@@ -356,7 +356,7 @@ case "$option" in
         echo "输入你的域名（Trojan证书申请）"
         echo ""
         read -p "请输入你的域名(node.v2board.com)如无需证书请直接回车:" node_domain
-        [ -z "${green}${node_domain}${plain}" ]
+        [ -z "${node_domain}" ]
 
         # 如果不输入默认为node1.v2board.com
         if [ ! $node_domain ]; then 
