@@ -301,7 +301,7 @@ case "$option" in
         
         echo "请注意，此为实验性功能，若出问题请手动修改配置文件"
         echo "XrayR默认安装路径为/etc/XrayR"
-        echo "XrayR v0.9.1 暂不支持"
+        echo "XrayR v0.9.1 及以上版本暂不支持"
         echo "面板类型默认设置为V2board，自动进行下一步"
         echo ""
         
