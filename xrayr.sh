@@ -25,7 +25,7 @@ echo -e "
  ${green}10.${plain} 生成 XrayR 配置
  "
 # 检查是否安装XrayR
-if [ -d "/etc/XrayR" ]; then
+if [ -f "/etc/XrayR/XrayR" ]; then
     # 检查XrayR运行状态
     xrayr_service_status=$(rc-service XrayR status 2>&1)
     
