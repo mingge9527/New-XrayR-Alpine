@@ -64,7 +64,7 @@ fi
 
 # 定义安装XrayR的函数
 install_xrayr() {
-    read -p "输入指定版本(默认最新版): " version_input
+    read -p "输入指定版本 例 v0.9.0 (回车默认最新版): " version_input
 
     if [ -z "$version_input" ]; then
         # 用户按下回车，获取最新版本
