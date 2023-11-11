@@ -6,7 +6,7 @@ yellow='\033[0;33m'
 plain='\033[0m'
 
 echo -e "
-  ${green}XrayR 后端管理脚本，${plain}${red}不适用于docker${plain}
+  ${green}XrayR 后端管理脚本，${plain}${red}仅适用于Alpine${plain}
 --- https://github.com/mingge9527/New-XrayR-Alpine ---
   ${green}0.${plain} 修改配置
 ————————————————
