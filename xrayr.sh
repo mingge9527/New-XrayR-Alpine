@@ -133,7 +133,7 @@ install_xrayr() {
     fi
     mkdir XrayR
     cd XrayR
-    wget -N --no-check-certificate "https://ghproxy.com/https://github.com/XrayR-project/XrayR/releases/download/${last_version}/XrayR-linux-${arch}.zip"
+    wget -N --no-check-certificate "https://github.com/XrayR-project/XrayR/releases/download/${last_version}/XrayR-linux-${arch}.zip"
     unzip XrayR-linux-${arch}.zip
     chmod 777 XrayR
     echo "正在写入rc-service……"
@@ -141,7 +141,7 @@ install_xrayr() {
     rc-service XrayR stop
     rc-update del XrayR default
     rm XrayR
-    wget https://ghproxy.com/https://raw.githubusercontent.com/mingge9527/New-XrayR-Alpine/main/XrayR
+    wget https://raw.githubusercontent.com/mingge9527/New-XrayR-Alpine/main/XrayR
     chmod 777 XrayR
     rc-update add XrayR default
 
